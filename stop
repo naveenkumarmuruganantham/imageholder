@@ -1,0 +1,50 @@
+[33mcommit c9bba5d39bb79ff2c128d5f60c94e316cbb2d5ae[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: “NAVEENKUMAR1307” <“naveenananthan45@gmail.com”>
+Date:   Mon Aug 21 12:59:34 2023 +0000
+
+    RMS1307|13.07.2000 - version 1-dev deployment | naveen
+
+[1mdiff --git a/LoanBookingSessionBean.java b/LoanBookingSessionBean.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3b6992d[m
+[1m--- /dev/null[m
+[1m+++ b/LoanBookingSessionBean.java[m
+[36m@@ -0,0 +1,37 @@[m
+[32m+[m[32mimport java.util.Scanner;[m[41m  [m
+[32m+[m[32mimport java.lang.Math;[m[41m  [m
+[32m+[m[32mimport java.io.printer;[m[41m [m
+[32m+[m[32mimport java.io.collection;[m[41m [m
+[32m+[m[32mimport java.io.scanner;[m[41m[m
+[32m+[m[32mimport java.io.outputprinter;[m[41m[m
+[32m+[m[32mimport java.io.inputprinter;[m[41m[m
+[32m+[m[32mpublic class SpiralPatternExample2[m[41m[m
+[32m+[m[32m{[m[41m  [m
+[32m+[m[32m//function to print the spiral pattern[m[41m  [m
+[32m+[m[32mpublic static void printPattern(int n)[m[41m  [m
+[32m+[m[32m{[m[41m  [m
+[32m+[m[32m//detrmines the boundary size of the array[m[41m  [m
+[32m+[m[32mint size = 2 * n - 1;[m[41m  [m
+[32m+[m[32m//inner loop[m[41m  [m
+[32m+[m[32mfor(int i = 1; i <= size; i++)[m[41m  [m
+[32m+[m[32m{[m[41m  [m
+[32m+[m[32m//outer loop[m[41m      [m
+[32m+[m[32mfor(int j = 1; j <= size; j++)[m[41m  [m
+[32m+[m[32m{[m[41m  [m
+[32m+[m[32m//calculates and prints the values for pattern[m[41m  [m
+[32m+[m[32mSystem.out.print(Math.max(Math.abs(i - n), Math.abs(j - n)) + 1 + " ");[m[41m  [m
+[32m+[m[32m}[m[41m  [m
+[32m+[m[32mSystem.out.println();[m[41m  [m
+[32m+[m[32m}[m[41m  [m
+[32m+[m[32m}[m[41m  [m
+[32m+[m[32m//driver code[m[41m  [m
+[32m+[m[32mpublic static void main(String args[])[m[41m  [m
+[32m+[m[32m{[m[41m  [m
+[32m+[m[32mScanner sc = new Scanner(System.in);[m[41m  [m
+[32m+[m[32mSystem.out.print("Enter the value of n: ");[m[41m  [m
+[32m+[m[32mint n = sc.nextInt();[m[41m  [m
+[32m+[m[32mSystem.out.println();[m[41m  [m
+[32m+[m[32m//function calling[m[41m  [m
+[32m+[m[32mprintPattern(n);[m[41m  [m
+[32m+[m[32m}[m[41m  [m
+[32m+[m[32m}[m[41m  [m
+\ No newline at end of file[m
